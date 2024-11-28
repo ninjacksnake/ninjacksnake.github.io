@@ -2,11 +2,14 @@
 
 :root{
 
-   --main-bg-color: #6a8ea0 ;
-   --secondary-bg-color: #bbd6e3;
-   --particle-color: #ffff;
-   --main-text-color: #6060;
-   --enphatized-text-color: #
+   --main-bg-color: #001F3F ;
+   --secondary-bg-color: #FFFBE6;
+   --main-particle-color: #73EC8B;
+   --secondary-particle-color: #030303;
+
+   --main-text-color: #3A6D8C;
+   --secondary-text-color: #dbb75a;
+   --enphatized-text-color: #e9690e;
 
 
 
@@ -21,7 +24,7 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     height: 100%;
-    background: #2a2b32;
+    background: var(--main-bg-color);
 }
 
 a {
@@ -31,11 +34,11 @@ a {
 }
 
 a:hover {
-    color: #e91e63;
+    color: var(--enphatized-text-color);
 }
 
 h1.header {
-    color: #e91e63;
+    color:  var(--secondary-text-color);
     font-size: 2.5rem;
     font-weight: bold;
 }
@@ -93,4 +96,8 @@ canvas {
 .footer {
     color: #fff;
     font-size: 1.3rem;
+}
+
+.showcase-text{
+    color: var(--secondary-text-color);
 }
