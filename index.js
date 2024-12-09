@@ -1,7 +1,7 @@
 particlesJS("background", {
   particles: {
     number: {
-      value: 15,
+      value: 4,
       density: {
         enable: true,
         value_area: 300,
