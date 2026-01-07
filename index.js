@@ -16,7 +16,7 @@ particlesJS("background", {
     opacity: {
       value: 0.8,
       random: true,
-      anum: {
+      anim: {
         enable: true,
         speed: 1,
         opacity_min: 0.1,

@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@400;700&family=Noto+Sans+Symbols:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-:root{
+:root {
+    --main-bg-color: #0c0c0c;
+    --secondary-bg-color: #FFFBE6;
+    --hover-link-color: #73EC8B;
+    --main-particle-color: #73EC8B;
+    --secondary-particle-color: #030303;
 
-   --main-bg-color: #00070e ;
-   --secondary-bg-color: #FFFBE6;
-   --main-particle-color: #73EC8B;
-   --secondary-particle-color: #030303;
-
-   --main-text-color: #3A6D8C;
-   --secondary-text-color: #dbb75a;
-   --enphatized-text-color: #063b6a;
-
-
-
+    --main-text-color: #ffffff;
+    --secondary-text-color: #73EC8B;
+    --enphatized-text-color: #063b6a;
+    --heading-bg: rgba(115, 236, 139, 0.1);
 }
 
 * {
@@ -25,37 +23,42 @@ body {
     font-family: 'Ubuntu', sans-serif;
     height: 100%;
     background: var(--main-bg-color);
+    color: var(--main-text-color);
 }
-.heading-text-container{
+
+.heading-text-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    background-color: var(--heading-bg);
+    border: 1px solid rgba(115, 236, 139, 0.2);
+    border-radius: 12px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    backdrop-filter: blur(5px);
 }
-.transparent-text{
-   
-   font-size: 120px;
-    color: transparent;
-    background: black;
-    background-clip: text;
- 
+
+.transparent-text {
+    font-size: 120px;
+    background: linear-gradient(135deg, #fff 0%, var(--secondary-text-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 h1.header {
-    color:  var(--secondary-text-color);
-    font-size: 2.5rem;
+    color: var(--secondary-text-color);
+    font-size: 3.5rem;
     font-weight: bold;
+    margin-bottom: 1rem;
 }
 
 h2 {
-    color: #616161;
-    font-size: rem;
+    color: var(--main-text-color);
+    font-size: 2rem;
     font-weight: bold;
 }
 
@@ -68,10 +71,8 @@ canvas {
 }
 
 .mb {
-    margin-bottom: rem;
+    margin-bottom: 2rem;
 }
-
-
 
 
 .links-list ul li {
@@ -79,6 +80,10 @@ canvas {
     margin-right: 2rem;
     font-size: 1.8rem;
     margin-bottom: 0;
+}
+
+.links-list ul li:hover {
+    cursor: pointer;
 }
 
 .links-list h1 {
@@ -105,6 +110,6 @@ canvas {
     font-size: 1.3rem;
 }
 
-.showcase-text{
+.showcase-text {
     color: var(--secondary-text-color);
 }
