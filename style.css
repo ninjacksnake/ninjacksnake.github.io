@@ -113,3 +113,13 @@ canvas {
 .showcase-text {
     color: var(--secondary-text-color);
 }
+
+@media (max-width: 768px) {
+    .links-list ul li {
+        font-size: 1.2rem;
+    }
+
+    .heading-text-container h1 {
+        font-size: 15vw;
+    }
+}
