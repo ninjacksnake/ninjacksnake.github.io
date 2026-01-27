@@ -7,10 +7,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="src/css/style.css" />
-  <title>Michael Fermin | Software Developer</title>
+  <title>Michael V. Fermín | Senior Software Engineer</title>
 </head>
 
 <body class="background">
+  <div id="particles-js"></div>
 
   <div class="container">
 
@@ -20,14 +21,14 @@
         <div class="sidebar">
           <div class="picture-container">
             <div class="picture">
-              <img src="src/assets/ProfileEmojiPic.jpeg" alt="Michael Fermin" class="profile-picture">
+              <img src="src/assets/ProfileEmojiPic.jpeg" alt="Michael V. Fermín" class="profile-picture">
             </div>
           </div>
 
           <div class="name-section">
-            <h2>Michael Fermin</h2>
+            <h2 style="font-size: 1.5rem;">Michael V. Fermín</h2>
             <div class="profile-title">
-              <h5>Software Developer</h5>
+              <h5>Senior Software Engineer</h5>
             </div>
           </div>
 
@@ -36,6 +37,10 @@
           </div>
 
           <div class="contact-section">
+            <div class="link-info">
+              <i class="fa-solid fa-location-dot"></i>
+              <span class="small">Santo Domingo, DR</span>
+            </div>
             <div class="link-info">
               <i class="fa-solid fa-phone"></i>
               <a href="tel:+18297286407">+1 (829) 728 6407</a>
@@ -48,12 +53,16 @@
 
           <div class="links-section" style="display: flex; flex-direction: column; gap: 0.5rem;">
             <div class="link-info">
+              <i class="fa-brands fa-linkedin"></i>
+              <a href="https://linkedin.com/in/mikefdev/" target="_blank">LinkedIn Profile</a>
+            </div>
+            <div class="link-info">
               <i class="fa-brands fa-github"></i>
               <a href="https://github.com/michaelfermin" target="_blank">GitHub</a>
             </div>
             <div class="link-info">
-              <i class="fa-brands fa-linkedin"></i>
-              <a href="#" target="_blank">LinkedIn</a>
+              <i class="fa-solid fa-globe"></i>
+              <a href="https://ninjacksnake.github.io/" target="_blank">Portfolio</a>
             </div>
           </div>
         </div>
@@ -70,7 +79,7 @@
               </li>
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="cv-tab" data-bs-toggle="tab" data-bs-target="#cv" type="button" role="tab"
-                  aria-controls="cv" aria-selected="false">CV</button>
+                  aria-controls="cv" aria-selected="false">Experience</button>
               </li>
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="portfolio-tab" data-bs-toggle="tab" data-bs-target="#portfolio"
@@ -86,68 +95,49 @@
           <div class="tab-content" id="myTabContent">
             <!-- About Section -->
             <div class="tab-pane fade show active" id="about" role="tabpanel" aria-labelledby="about-tab">
-              <h1>About Me</h1>
+              <h1>Professional Profile</h1>
               <p>
-                Strategic and results-driven Software Engineer with over 14 years of experiece in
-                architecting enterprise-level applications. Expert in C#/.NET, Node.js, and the TypeScript
+                Strategic and results-driven Software Engineer with over <strong>14 years</strong> of experience in
+                architecting
+                enterprise-level applications. Expert in <strong>C#/.NET</strong>, <strong>Node.js</strong>, and the
+                <strong>TypeScript</strong>
                 ecosystem, with a proven track record of leading digital transformations for global leaders
-                like Verizon Wireless and the Dominican Congress. Beyond technical execution, I bring a
-                unique "Ownership" mindset, specializing in modernizing legacy systems and building
-                cloud-native, user-centric solutions across Web, Mobile, and Desktop platforms.
+                like <strong>Verizon Wireless</strong> and the <strong>Dominican Congress</strong>.
               </p>
+
               <div class="mt-5">
-                <h4 style="color: var(--accents-color);">What I Do</h4>
-                <div class="row g-4 mt-2">
-                  <div class="col-md-6">
-                    <div class="p-4 rounded-4"
-                      style="background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border);">
-                      <i class="fa-solid fa-code mb-3" style="color: var(--accents-color); font-size: 1.5rem;"></i>
-                      <h5>Web Development</h5>
-                      <p class="small mb-0">High-performance applications built with modern frameworks.</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="p-4 rounded-4"
-                      style="background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border);">
-                      <i class="fa-solid fa-server mb-3" style="color: var(--accents-color); font-size: 1.5rem;"></i>
-                      <h5>Backend Systems</h5>
-                      <p class="small mb-0">Scalable architectures and robust API development.</p>
-                    </div>
-                  </div>
+                <h4 style="color: var(--accents-color);">Core Competencies</h4>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <span class="skill-badge">C# / .NET Core</span>
+                  <span class="skill-badge">Node.js (NestJS / Express)</span>
+                  <span class="skill-badge">TypeScript / JavaScript</span>
+                  <span class="skill-badge">React / Redux / Angular</span>
+                  <span class="skill-badge">Flutter / Dart</span>
+                  <span class="skill-badge">AWS / GitLab CI/CD / Docker</span>
+                  <span class="skill-badge">PostgreSQL / MSSQL / MongoDB</span>
                 </div>
+              </div>
+
+              <div class="mt-5">
+                <h4 style="color: var(--accents-color);">Professional Focus</h4>
                 <div class="row g-4 mt-2">
                   <div class="col-md-6">
-                    <div class="p-4 rounded-4"
+                    <div class="p-4 rounded-4 h-100"
                       style="background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border);">
-                      <i class="fa-solid fa-mobile mb-3" style="color: var(--accents-color); font-size: 1.5rem;"></i>
-                      <h5>Mobile Development</h5>
-                      <p class="small mb-0">High-performance mobile applications built with flutter.</p>
+                      <i class="fa-solid fa-rocket mb-3" style="color: var(--accents-color); font-size: 1.5rem;"></i>
+                      <h5>Digital Transformation</h5>
+                      <p class="small mb-0">Specializing in modernizing legacy architectures and building cloud-native
+                        solutions.</p>
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="p-4 rounded-4"
+                    <div class="p-4 rounded-4 h-100"
                       style="background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border);">
-                      <i class="fa-solid fa-server mb-3" style="color: var(--accents-color); font-size: 1.5rem;"></i>
-                      <h5>Backend Systems</h5>
-                      <p class="small mb-0">Scalable architectures and robust API development.</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="row g-4 mt-2">
-                  <div class="col-md-6">
-                    <div class="p-4 rounded-4"
-                      style="background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border);">
-                      <i class="fa-solid fa-code mb-3" style="color: var(--accents-color); font-size: 1.5rem;"></i>
-                      <h5>Web Development</h5>
-                      <p class="small mb-0">High-performance applications built with modern frameworks.</p>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="p-4 rounded-4"
-                      style="background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border);">
-                      <i class="fa-solid fa-server mb-3" style="color: var(--accents-color); font-size: 1.5rem;"></i>
-                      <h5>Backend Systems</h5>
-                      <p class="small mb-0">Scalable architectures and robust API development.</p>
+                      <i class="fa-solid fa-code-branch mb-3"
+                        style="color: var(--accents-color); font-size: 1.5rem;"></i>
+                      <h5>Technical Leadership</h5>
+                      <p class="small mb-0">Experience leading cross-functional teams and implementing SOLID/Clean
+                        Architecture.</p>
                     </div>
                   </div>
                 </div>
@@ -156,72 +146,155 @@
 
             <!-- CV Section -->
             <div class="tab-pane fade" id="cv" role="tabpanel" aria-labelledby="cv-tab">
-              <h1>Experience</h1>
+              <h1>Professional Experience</h1>
               <div class="mt-4">
-                <div class="mb-4 ps-4 border-start border-2" style="border-color: var(--accents-color) !important;">
-                  <h5 class="mb-1">Senior Software Developer</h5>
-                  <p class="small text-muted mb-2">2020 — Present</p>
-                  <p>Leading development teams and architecting enterprise solutions using .NET and Angular.</p>
+                <div class="mb-5 ps-4 border-start border-2" style="border-color: var(--accents-color) !important;">
+                  <div class="d-flex justify-content-between mb-1">
+                    <h5 class="mb-0">Software Engineer</h5>
+                    <span class="small text-muted">2020 — Present</span>
+                  </div>
+                  <p class="small text-primary mb-2">Congress of the Dominican Republic</p>
+                  <p class="small mb-0">
+                    Lead developer for the <strong>National Legislative Information System</strong> and Transparency
+                    Portal.
+                    Migration of legacy WebForms to modern .NET environments, increasing project scalability and data
+                    integrity.
+                  </p>
                 </div>
+
+                <div class="mb-5 ps-4 border-start border-2" style="border-color: var(--glass-border) !important;">
+                  <div class="d-flex justify-content-between mb-1">
+                    <h5 class="mb-0">Software Engineer (EPAM Client: Nordstrom)</h5>
+                    <span class="small text-muted">2022 — 2023</span>
+                  </div>
+                  <p class="small text-primary mb-2">EPAM Systems</p>
+                  <p class="small mb-0">
+                    Full-stack engineering for high-traffic luxury retail apps.
+                    Built and scaled features using <strong>Node.js (NestJS)</strong>, <strong>React</strong>, and
+                    managed <strong>AWS/S3</strong> pipelines.
+                  </p>
+                </div>
+
+                <div class="mb-5 ps-4 border-start border-2" style="border-color: var(--glass-border) !important;">
+                  <div class="d-flex justify-content-between mb-1">
+                    <h5 class="mb-0">Software Engineer Team Lead (Client: Verizon)</h5>
+                    <span class="small text-muted">2017 — 2021</span>
+                  </div>
+                  <p class="small text-primary mb-2">Newtech</p>
+                  <p class="small mb-0">
+                    Led a 100+ member global Scrum organization.
+                    Migration of legacy network modules from <strong>ASP.NET WebForms</strong> to
+                    <strong>Node.js/React</strong>.
+                  </p>
+                </div>
+
                 <div class="mb-4 ps-4 border-start border-2" style="border-color: var(--glass-border) !important;">
-                  <h5 class="mb-1">Full Stack Developer</h5>
-                  <p class="small text-muted mb-2">2017 — 2020</p>
-                  <p>Developed and maintained multiple client-facing applications with React and Node.js.</p>
+                  <div class="d-flex justify-content-between mb-1">
+                    <h5 class="mb-0">Software Architect & Mobile Consultant</h5>
+                    <span class="small text-muted">2010 — Present</span>
+                  </div>
+                  <p class="small text-primary mb-2">Suenna Electronica</p>
+                  <p class="small mb-0">
+                    End-to-end development of <strong>ProductBundler</strong> (Angular/NestJS) and specialized Flutter
+                    mobile applications for electronics diagnostics.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-5">
+                <h4 style="color: var(--accents-color);">Certifications</h4>
+                <div class="row g-3 mt-2">
+                  <div class="col-md-6 small">
+                    <i class="fa-solid fa-certificate me-2 text-muted"></i> Software Architecture | LinkedIn Learning
+                  </div>
+                  <div class="col-md-6 small">
+                    <i class="fa-solid fa-certificate me-2 text-muted"></i> Scrum Foundations Prof. | CertiProf
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Portfolio Section -->
             <div class="tab-pane fade" id="portfolio" role="tabpanel" aria-labelledby="portfolio-tab">
-              <h1>Portfolio</h1>
+              <h1>Technical Portfolio</h1>
               <div class="row g-4 mt-2">
                 <div class="col-md-6">
                   <div class="p-4 rounded-4 h-100"
                     style="background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border);">
-                    <h5>E-Commerce Platform</h5>
-                    <p class="small">A full-featured store built with NestJS and React.</p>
-                    <a href="#" class="btn btn-sm"
-                      style="color: var(--accents-color); border: 1px solid var(--accents-color);">View Project</a>
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5 class="mb-0">ProductBundler</h5>
+                      <span class="small text-muted">Web</span>
+                    </div>
+                    <p class="small mb-4">A standalone pricing and bundle engine built with <strong>Angular</strong>,
+                      <strong>NestJS</strong>, and <strong>PostgreSQL</strong> to automate wholesale operations.
+                    </p>
+                    <div class="d-flex gap-2 flex-wrap">
+                      <span class="skill-badge" style="font-size: 0.7rem;">NestJS</span>
+                      <span class="skill-badge" style="font-size: 0.7rem;">Angular</span>
+                    </div>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="p-4 rounded-4 h-100"
                     style="background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border);">
-                    <h5>AI Image Generator</h5>
-                    <p class="small">Deep learning integration for creative assets.</p>
-                    <a href="#" class="btn btn-sm"
-                      style="color: var(--accents-color); border: 1px solid var(--accents-color);">View Project</a>
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5 class="mb-0">Inverter Diagnostic App</h5>
+                      <span class="small text-muted">Mobile</span>
+                    </div>
+                    <p class="small mb-4"><strong>Flutter</strong> mobile application designed for electronics
+                      technicians to perform real-time inverter diagnostics and error handling.</p>
+                    <div class="d-flex gap-2 flex-wrap">
+                      <span class="skill-badge" style="font-size: 0.7rem;">Flutter</span>
+                      <span class="skill-badge" style="font-size: 0.7rem;">Dart</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="p-4 rounded-4 h-100"
+                    style="background: rgba(255,255,255,0.02); border: 1px solid var(--glass-border);">
+                    <div class="d-flex justify-content-between mb-3">
+                      <h5 class="mb-0">National Budget Portal</h5>
+                      <span class="small text-muted">Web</span>
+                    </div>
+                    <p class="small mb-4">High-traffic government tool built with <strong>React</strong> and
+                      <strong>PostgreSQL</strong> for fiscal transparency and document analysis.
+                    </p>
+                    <div class="d-flex gap-2 flex-wrap">
+                      <span class="skill-badge" style="font-size: 0.7rem;">React</span>
+                      <span class="skill-badge" style="font-size: 0.7rem;">SQL</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Contact Section (Mobile/Small Screen) -->
+            <!-- Contact Section -->
             <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-              <h1>Contact</h1>
+              <h1>Contact Details</h1>
               <div class="mt-4">
-                <div class="link-info mb-3">
-                  <i class="fa-solid fa-phone"></i>
-                  <a href="tel:+18297286407">+1 (829) 728 6407</a>
-                </div>
                 <div class="link-info mb-3">
                   <i class="fa-solid fa-envelope"></i>
                   <a href="mailto:michaelv.fermin@gmail.com">michaelv.fermin@gmail.com</a>
                 </div>
                 <div class="link-info mb-3">
-                  <i class="fa-brands fa-github"></i>
-                  <a href="https://github.com/michaelfermin" target="_blank">GitHub Profile</a>
+                  <i class="fa-solid fa-phone"></i>
+                  <a href="tel:+18297286407">+1 (829) 728 6407</a>
+                </div>
+                <div class="link-info mb-3">
+                  <i class="fa-brands fa-linkedin"></i>
+                  <a href="https://linkedin.com/in/mikefdev/" target="_blank">linkedin.com/in/mikefdev/</a>
                 </div>
               </div>
             </div>
           </div>
 
-        </div>
       </main>
     </div>
   </div>
-
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="src/js/app.js"></script>
 </body>
 
 </html>
