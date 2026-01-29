@@ -11,11 +11,16 @@
     --glass-bg-hover: rgba(12, 74, 116, 0.62);
     --glass-border: rgba(255, 255, 255, 0.08);
     --glass-blur: blur(4px);
+    --glass-glow: rgba(204, 209, 60, 0.635);
 
     /* Text Colors */
     --text-primary: #ffffff;
     --text-secondary: rgba(255, 255, 255, 0.6);
-    --text-muted: rgba(255, 255, 255, 0.4);
+    --text-muted: rgba(255, 255, 255, 0.892);
+    --text-dimmed: rgba(174, 207, 92, 0.6);
+    --text-link: rgba(21, 19, 19, 0.6);
+
+    --text-glass-green: rgba(16, 185, 129, 0.4);
 
     /* Typography */
     --body-font: 'Poppins', sans-serif;
@@ -291,6 +296,29 @@ body {
     font-weight: 500;
     border: 1px solid rgba(16, 185, 129, 0.2);
     transition: all 0.3s ease;
+}
+
+.skill-badge-link {
+    text-decoration: none !important;
+    background: var(--glass-glow);
+    color: var(--glass-bg-hover);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    border: 1px solid rgba(16, 185, 129, 0.2);
+    transition: all 0.3s ease;
+}
+
+.skill-badge-link a {
+    text-decoration: none !important;
+    color: black
+}
+
+.skill-badge-link:hover {
+    background: var(--glass-bg-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px var(--accents-glow);
 }
 
 .skill-badge:hover {
